@@ -1,3 +1,6 @@
-@import "media-queries.css";
+@import "theme.css";
 @import "base.css";
-@import "style.css";
+@import "grids.css";
+@import "nav.css";
+@import "parallax.css";
+@import "media-queries.css";
