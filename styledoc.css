@@ -1,0 +1,102 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6e6dd;
+    line-height: 1.6;
+}
+
+.document-container {
+    width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contenido */
+.content h2, .content h3 {
+    margin-bottom: 15px;
+}
+
+.content h2 {
+    font-size: 22px;
+}
+
+.content h3 {
+    font-size: 18px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Estilos para imágenes */
+
+
+.image-caption {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.image-container {
+    width: 425px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-content: center;  /* Alinea horizontalmente */
+    align-items: center; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-hover:hover {
+    transform: scale(1.1); /* Agranda la imagen */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Aumenta la sombra */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Limpiar float para que el contenido siga después de la imagen alineada */
+.image-left::after {
+    content: "";
+    display: table;
+    clear: both;
+}
