@@ -17,6 +17,10 @@ body {
   overflow: hidden;
 }
 
+h2 {font-family: 'OCR-A'; }
+
+p {font-family: 'OCR-B'; }
+
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
