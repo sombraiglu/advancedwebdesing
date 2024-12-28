@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #4b0000; /* Granate */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #700000; /* Más oscuro para contraste */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-bar {
+  font-size: 1.5rem;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.menu-content a {
+  display: block;
+  padding: 10px 20px;
+  color: #700000; /* Granate oscuro */
+  text-decoration: none;
+}
+
+.menu-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.menu.show .menu-content {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://via.placeholder.com/1600x900") no-repeat center
+    center/cover;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.collage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.collage img {
+  width: calc(33% - 20px);
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
