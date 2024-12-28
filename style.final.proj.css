@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: #700000; /* Más oscuro para contraste */
+  background: #4b0000; /* Más oscuro para contraste */
   position: fixed;
   width: 100%;
   top: 0;
@@ -47,7 +47,7 @@ header {
 .menu-content a {
   display: block;
   padding: 10px 20px;
-  color: #700000; /* Granate oscuro */
+  color: #700000;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 400px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
