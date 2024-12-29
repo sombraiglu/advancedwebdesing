@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #fff;
-  background-color: #4b0000; /* Granate */
+  background-color: #4b0000;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: #4b0000; /* Más oscuro para contraste */
+  background: #4b0000;
   position: fixed;
   width: 100%;
   top: 0;
@@ -65,16 +65,18 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url("https://via.placeholder.com/1600x900") no-repeat center
-    center/cover;
+  background: url("https://cdn.cosmos.so/763bd7e1-5b4a-4975-a0a7-3e5471dbd654?format=jpeg")
+    no-repeat center center/cover;
   color: #fff;
   text-align: center;
   margin-top: 60px;
 }
 
 .hero h1 {
-  font-size: 400px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff; /* Cambia a granate */
+  font-size: 400px; /* Ajusta el tamaño de la fuente */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+  margin: 0; /* Elimina el margen predeterminado */
 }
 
 /* Section Styles */
@@ -82,6 +84,23 @@ section {
   padding: 50px 20px;
   text-align: center;
   margin-top: 60px;
+}
+
+/* Estilos para la sección */
+#text-section {
+  padding: 20px;
+  background-color: #f9f9f9; /* Color de fondo suave */
+  color: #333; /* Color del texto */
+  border-radius: 8px; /* Esquinas redondeadas */
+  margin: 20px;
+}
+
+/* Estilo para el párrafo */
+.aligned-text {
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 1.6; /* Altura de línea para legibilidad */
+  margin: 10px 0; /* Espaciado superior e inferior */
 }
 
 .collage {
@@ -96,6 +115,28 @@ section {
   max-width: 400px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Collage container styles */
+.collage {
+  display: flex;
+  gap: 15px; /* Espacio entre imágenes */
+  justify-content: center;
+  flex-wrap: wrap; /* Para que las imágenes se ajusten si el espacio es limitado */
+  margin: 20px 0;
+}
+
+.collage img {
+  width: 300px; /* Ancho fijo para las imágenes */
+  height: auto;
+  border-radius: 10px; /* Esquinas redondeadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+
+.collage img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
 html {
