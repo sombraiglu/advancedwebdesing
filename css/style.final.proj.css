@@ -32,32 +32,6 @@ header {
   font-size: 1.5rem;
 }
 
-.menu-content {
-  display: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1001;
-}
-
-.menu-content a {
-  display: block;
-  padding: 10px 20px;
-  color: #700000;
-  text-decoration: none;
-}
-
-.menu-content a:hover {
-  background-color: #f0f0f0;
-}
-
-.menu.show .menu-content {
-  display: block;
-}
-
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 8vw; /* Reduce ligeramente el tamaño */
