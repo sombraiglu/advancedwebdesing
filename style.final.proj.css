@@ -139,12 +139,7 @@ h2 {
     transform: translateY(0);
   }
 }
-.divider {
-  border: none; /* Elimina el borde predeterminado de <hr> */
-  width: 250px; /* Ancho de la línea */
-  height: 2px; /* Altura de la línea */
-  background-color: #ffffff; /* Color de la línea */
-}
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -396,4 +391,57 @@ body.dark-mode h2 {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
+}
+body.dark-mode .flip-card-front {
+  background-color: #121212;
+}
+
+.interactive-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px; /* Da la sensación de profundidad */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* Permite el 3D en los hijos */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Gira la tarjeta */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta el reverso cuando no se muestra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #4b0000;
+}
+
+.flip-card-back {
+  background-color: #4b0000;
+  color: white;
+  transform: rotateY(180deg); /* Hace que esté al revés inicialmente */
+  padding: 20px;
+  box-sizing: border-box;
 }

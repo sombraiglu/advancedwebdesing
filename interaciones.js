@@ -57,3 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let currentIndex = 0;
+
+function toggleHamburgerMenu() {
+  const menu = document.querySelector(".hamburger-menu");
+  menu.classList.toggle("active");
+}
